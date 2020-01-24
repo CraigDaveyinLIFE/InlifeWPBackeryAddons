@@ -3,6 +3,7 @@
 /*
  *
  * Plugin Name: Inlife WP Backery Addons
+ * Plugin URI: https://github.com/CraigDaveyinLIFE/InlifeWPBackeryAddons
  * Author: inLIFE Design
  * Author URI: https://www.inlife.co.uk/
  * Description: This is the inlife wp backery addons plugin.
