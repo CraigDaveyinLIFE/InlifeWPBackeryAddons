@@ -7,7 +7,7 @@
  * Author: inLIFE Design
  * Author URI: https://www.inlife.co.uk/
  * Description: This is the inlife wp backery addons plugin.
- * Version: 1.1
+ * Version: 1.2
  * License: GPL2
  *
  */

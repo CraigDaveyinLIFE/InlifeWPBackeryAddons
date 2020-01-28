@@ -18,11 +18,13 @@ class vcInlifeHoverImage extends WPBakeryShortCode
     public function vc_hover_image_mapping() {
 
         // Stop all if VC is not enabled
+
         if ( !defined( 'WPB_VC_VERSION' ) ) {
             return;
         }
 
         // Map the block with vc_map()
+
         vc_map(
 
             array(

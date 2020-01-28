@@ -2,12 +2,22 @@
 
 $id = rand(0 , 10000);
 
-$posts = new WP_Query(
-    array(
-        'post_type' => $atts['post_type'],
-        'posts_per_page' => $atts['number']
-    )
+$args = array(
+    'post_type' => $atts['post_type'],
+    'posts_per_page' => $atts['number']
 );
+
+if(isset($atts['taxonomy']) && $atts['taxonomy'] != ''){
+   $args['tax_query'] = array(
+     array(
+         'taxonomy' => $atts['taxonomy'],
+         'field' => 'slug',
+         'terms' => explode(',' , $atts['terms'])
+     )
+   );
+}
+
+$posts = new WP_Query($args);
 
 $itemstoshow = explode(',' , $atts['show']);
 ?>

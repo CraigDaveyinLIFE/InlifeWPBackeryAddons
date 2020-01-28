@@ -54,6 +54,12 @@ class vcInlifePostGridResults extends WPBakeryShortCode {
 
     }
 
+    function get_all_taxonomies(){
+
+        return get_taxonomies();
+
+    }
+
     public function vc_inlife_post_grid_results_mapping(){
 
         if( !defined('WPB_VC_VERSION') ){ return; }
@@ -175,6 +181,34 @@ class vcInlifePostGridResults extends WPBakeryShortCode {
                         'param_name' => 'number',
                         'save_always' => true,
                         'group' => 'Query'
+                    ),
+
+                    array(
+                        'type' => 'dropdown',
+                        'class'      => '',
+                        'heading'    => esc_html__('Taxonomy', 'inlife'),
+                        'param_name' => 'taxonomy',
+                        'save_always' => true,
+                        'value' => $this->get_all_taxonomies(),
+                        'group' => 'Query',
+                        'dependency' => array(
+                            'element' => 'has_filter',
+                            'value' => 'no',
+                        )
+                    ),
+
+                    array(
+                        'type' => 'textfield',
+                        'class'      => '',
+                        'heading'    => esc_html__('Terms', 'inlife'),
+                        'description' => 'Enter slugs for the terms from the taxonomy above. (separated by commas)',
+                        'param_name' => 'terms',
+                        'save_always' => true,
+                        'group' => 'Query',
+                        'dependency' => array(
+                            'element' => 'has_filter',
+                            'value' => 'no',
+                        )
                     ),
 
                     // TEXT STYLES
