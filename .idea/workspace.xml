@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77a7d433-c3c4-4eda-be7a-c1acb695a03d" name="Default Changelist" comment="" />
+    <list default="true" id="77a7d433-c3c4-4eda-be7a-c1acb695a03d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inlifewpbackeryaddons.php" beforeDir="false" afterPath="$PROJECT_DIR$/inlifewpbackeryaddons.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post-grid/style1.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post-grid/style1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post-grid/style2.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post-grid/style2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vc_elements/hover-image.php" beforeDir="false" afterPath="$PROJECT_DIR$/vc_elements/hover-image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vc_elements/post-grid-filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vc_elements/post-grid-filter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vc_elements/post-grid-results.php" beforeDir="false" afterPath="$PROJECT_DIR$/vc_elements/post-grid-results.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +34,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -49,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579877481170</updated>
       <workItem from="1579877485598" duration="855000" />
+      <workItem from="1581000738900" duration="2214000" />
     </task>
     <servers />
   </component>
@@ -56,6 +70,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="184" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581002952037">
+      <screen x="0" y="23" width="1440" height="806" />
+    </state>
+    <state x="184" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.806@0.23.1440.806" timestamp="1581002952037" />
     <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1579877505033">
       <screen x="0" y="23" width="1440" height="805" />
     </state>

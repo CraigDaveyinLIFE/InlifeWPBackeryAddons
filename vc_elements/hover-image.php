@@ -29,6 +29,7 @@ class vcInlifeHoverImage extends WPBakeryShortCode
                 'name' => __('Hover Image', 'text-domain'),
                 'base' => 'vc_hover_image',
                 'category' => __('Inlife Addons' , 'inlife'),
+                'icon' => plugin_dir_url(__FILE__).'../assets/logo-black-small.png',
                 'params' => array(
 
                     array(

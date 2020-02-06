@@ -1,15 +1,30 @@
 <?php
 
-$id = rand(0 , 10000);
+    $id = rand(0 , 10000);
 
-$posts = new WP_Query(
-    array(
+    $args = array(
         'post_type' => $atts['post_type'],
-        'posts_per_page' => $atts['number']
-    )
-);
+        'posts_per_page' => ($atts['number'] != '') ? $atts['number'] : -1
+    );
 
-$itemstoshow = explode(',' , $atts['show']);
+    if($atts['has_filter'] == 'no' && $atts['taxonomy'] != '' && $atts['terms'] != ''){
+
+        $args['tax_query'][] = array(
+            'taxonomy' => $atts['taxonomy'],
+            'field' => 'slug',
+            'terms' => explode(','  , $atts['terms'])
+        );
+
+    }
+
+    $posts = new WP_Query($args);
+
+    echo '<pre>';
+    print_r($posts);
+    echo '</pre>';
+
+    $itemstoshow = explode(',' , $atts['show']);
+
 ?>
 <ul data-style="2" data-buttontext="<?=$atts['button_text']?>" data-show="<?=$atts['show']?>" id="grid-<?=$id?>" class="inlife-post-grid columns-<?=$atts['number_in_row']?> <?=(isset($atts['has_filter']) && $atts['has_filter'] == 'yes') ? 'has_filter' : ''?>">
     <?php

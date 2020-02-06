@@ -37,6 +37,7 @@ class vcInlifePostGridFilter extends WPBakeryShortCode {
                 'base' => 'vc_inlife_post_grid_filter',
                 'category' => __('Inlife Addons' , 'inlife'),
                 'admin_enqueue_js' => plugin_dir_url(__FILE__).'../assets/js/inlife-wp-backery-addons.js',
+                'icon' => plugin_dir_url(__FILE__).'../assets/logo-black-small.png',
                 'params' => array(
 
                     array(

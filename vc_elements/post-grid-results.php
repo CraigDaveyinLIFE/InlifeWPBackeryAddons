@@ -38,6 +38,12 @@ class vcInlifePostGridResults extends WPBakeryShortCode {
 
     }
 
+    function get_all_taxonomies(){
+
+        return get_taxonomies();
+
+    }
+
     function get_all_font_sizes(){
 
         return array(
@@ -65,6 +71,7 @@ class vcInlifePostGridResults extends WPBakeryShortCode {
                 'description' => __('Post grid that works with the Post Grid Filter element' , 'inlife'),
                 'category' => __('Inlife Addons' , 'inlife'),
                 'admin_enqueue_js' => plugin_dir_url(__FILE__).'../assets/js/inlife-wp-backery-addons.js',
+                'icon' => plugin_dir_url(__FILE__).'../assets/logo-black-small.png',
                 'params' => array(
 
                     array(
@@ -175,6 +182,34 @@ class vcInlifePostGridResults extends WPBakeryShortCode {
                         'param_name' => 'number',
                         'save_always' => true,
                         'group' => 'Query'
+                    ),
+
+                    array(
+                        'type' => 'dropdown',
+                        'class'      => '',
+                        'heading'    => esc_html__('Taxonomy', 'inlife'),
+                        'param_name' => 'taxonomy',
+                        'save_always' => true,
+                        'value' => $this->get_all_taxonomies(),
+                        'group' => 'Query',
+                        'dependency' => array(
+                            'element' => 'has_filter',
+                            'value' => 'no',
+                        )
+                    ),
+
+                    array(
+                        'type' => 'textfield',
+                        'class'      => '',
+                        'heading'    => esc_html__('Terms', 'inlife'),
+                        'description' => 'Enter slugs for the terms from the taxonomy above. (separated by commas)',
+                        'param_name' => 'terms',
+                        'save_always' => true,
+                        'group' => 'Query',
+                        'dependency' => array(
+                            'element' => 'has_filter',
+                            'value' => 'no',
+                        )
                     ),
 
                     // TEXT STYLES
